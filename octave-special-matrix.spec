@@ -5,6 +5,11 @@ Name:		octave-%{octpkg}
 Version:	1.0.7
 Release:	1
 Url:		https://octave.sourceforge.io/%{octpkg}/
+# Use devlopment snapshot because last release is too old.
+# hg clone http://hg.code.sf.net/p/octave/special-matrix special-matrix
+# rm -fr special-matrix/{.hg,.hgignore}
+# mv special-matrix special-matrix-1.0.7
+# tar cvzf special-matrix-1.0.7.tar.gz special-matrix-1.0.7/*
 Source0:	http://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
 License:	GPLv2+
 Group:		Sciences/Mathematics
